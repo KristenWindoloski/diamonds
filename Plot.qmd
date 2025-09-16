@@ -1,0 +1,33 @@
+---
+title: "ggplot2 diamonds plot"
+format: html
+editor: visual
+---
+
+## Plotting
+
+Here is a plot below of the diamonds package:
+
+```{r}
+library(ggplot2)
+df <- ggplot2::diamonds
+ggplot(df) +
+  geom_point(aes(x = x, y = carat)) + 
+  geom_point(aes(x = x, y = y)) +
+  geom_point(aes(x = x, y = z)) +
+  geom_point(aes(x = x, y = depth)) +
+  geom_point(aes(x = x, y = table)) +
+  geom_point(aes(x = x, y = price))
+```
+
+on
+
+```{r}
+Sys.Date()
+```
+
+at
+
+```{r}
+Sys.time()
+```
